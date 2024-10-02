@@ -11,15 +11,33 @@
   </head>
   <body style="background-color: rgb(203, 203, 218)">
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-header">Title</h3>
-          <h5 class="card-title">Title</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-            magni!
-          </p>
-          <img src="./img.png" alt="" class="card-img-bottom" />
+      <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="header">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="true"
+              aria-controls="collapse1"
+            >
+              Header
+            </button>
+          </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse show"
+            aria-labelledby="#header"
+            data-bs-parrent="#myAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Maxime, amet.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
