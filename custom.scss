@@ -1,0 +1,17 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --border-radius-custom: 12px;
+}
+
+$custom-color: rgba(0, 0, 0, 0.5);
+
+@mixin box-shadow($shadow){
+    box-shadow: 0 0 10px $shadow;
+}
+
+.btn{
+    @include box-shadow($custom-color);
+    border-radius: var(--border-radius-custom);
+}
+
